@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏛️ Rangrezza — Restaurant, Banquet & Nightlife
 
-## Getting Started
+A premium multi-venue website for **Rangrezza** — a fine-dining restaurant, grand banquet hall, and Neurons restrobar, all in one immersive digital experience.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16.2-000?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?logo=framer)
+![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🔗 Project Links
+
+| | |
+|---|---|
+| **GitHub** | [github.com/Roony0708/Rangrezza_restro](https://github.com/Roony0708/Rangrezza_restro) |
+| **Live Demo** | [rangrezza.vercel.app](https://rangrezza.vercel.app) |
+
+---
+
+## ✨ Features
+
+| Section | Highlights |
+|---------|-----------|
+| **Home** | Full-screen video hero, floating particles, GSAP animations, featured dishes, event highlights |
+| **Restaurant** | Chef's recommendation with Dal-Makhani visual, digital menu, food gallery, signature dishes, story section |
+| **Banquet** | Hero with animated zoom, event types grid, capacity guide, booking process, inquiry CTA |
+| **Restrobar / Neurons** | Nightlife gallery with 12 images, signature mocktails showcase, featured drinks carousel, music vibes |
+| **Gallery** | Janta Fridge & Restaurant Vibes photo collections with lightbox, floating particles hero |
+| **Contact** | Interactive expandable map (LocationMap), contact form with floating labels, business hours, social links |
+
+### 🎬 Animations
+- **GSAP** — Hero text reveals with stagger, scroll-triggered timelines
+- **Framer Motion** — Layout animations, hover tilts, spring physics, parallax, scroll-triggered reveals
+- **Custom particles** — Floating gold dots across hero sections
+- **LocationMap** — 3D tilt on hover, click-to-expand with animated road networks, gold pin
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework** — Next.js 16 (App Router, Turbopack)
+- **Language** — TypeScript
+- **Styling** — Tailwind CSS v4 with custom theme (charcoal, ivory, gold palette)
+- **Animation** — Framer Motion 12 + GSAP 3
+- **UI** — Custom glass-card components, lightbox, scroll-reveal, section-heading
+- **Data** — Static menu (mocktails, shakes, soups, starters, mains, biryani, desserts, etc.)
+
+---
+
+## 📦 Project Structure
+
+```
+src/
+├── app/              # Pages: /, /restaurant, /banquet, /restrobar, /gallery, /contact
+│   ├── banquet/
+│   ├── contact/
+│   ├── gallery/
+│   ├── restaurant/
+│   └── restrobar/
+├── components/
+│   ├── banquet/      # BanquetHero, EventGallery, CapacitySection, etc.
+│   ├── contact/      # ContactHero, ContactForm, MapSection, BusinessHours
+│   ├── gallery/      # GalleryGrid
+│   ├── home/         # HeroSection, FeaturedDishes, AboutPreview, etc.
+│   ├── restaurant/   # RestaurantHero, ChefRecommendation, FoodGallery, etc.
+│   ├── restrobar/    # RestrobarHero, NightlifeGallery, CocktailsShowcase, etc.
+│   └── ui/           # Navbar, Footer, GlassCard, Lightbox, ScrollReveal, etc.
+├── data/             # Static data: menu.ts, siteConfig.ts, gallery.ts, testimonials.ts
+├── hooks/            # Custom hooks (useScrollAnimation)
+└── lib/              # Utilities (formatPrice)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Install dependencies
+npm install
 
-## Learn More
+# Start development server
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# Build for production
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy on [Vercel](https://vercel.com/new):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push this repo to GitHub
+2. Import into Vercel (auto-detects Next.js)
+3. No config needed — `npm run build` already passes
+
+---
+
+## 🎨 Color Palette
+
+| Token | Hex |
+|-------|-----|
+| `dark` | `#0D0D1A` |
+| `charcoal` | `#1A1A2E` |
+| `ivory` | `#FFF8F0` |
+| `gold` | `#C9A84C` |
+| `gold-light` | `#E8D48B` |
+| `burgundy` | `#722F37` |
+
+---
+
+## 📄 License
+
+All rights reserved — Rangrezza
