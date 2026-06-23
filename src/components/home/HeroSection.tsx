@@ -52,7 +52,6 @@ export default function HeroSection() {
         muted
         loop
         playsInline
-        poster="/videos/0ac84800-62bd-464f-9d15-c8efd71fa10a.jpg"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/videos/Rangrezza-Restaurant-Banquet-Rooftop.mp4" type="video/mp4" />
